@@ -38,18 +38,38 @@
         list-style: none;
     }
 
-    &__icon {
+    &__icon-text {
+        position: relative;
         text-align: center;
+        padding-top: 65px;
         width: 105px;
         color: $white;
         font-weight: 500;
         font-size: 14px;
         line-height: 14px;
 
-        img {
-            display: block;
-            margin: 0 auto;
-            margin-bottom: 20px;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 46px;
+            height: 46px;
+            background-position: center;
+            background-repeat: no-repeat;
+            transform: translateX(-50%);
+        }
+
+        &_timer::before {
+            background-image: url('../../icons/main_screen/timer.png');
+        }
+
+        &_hand-cart::before {
+            background-image: url('../../icons/main_screen/hand-cart.png');
+        }
+
+        &_messages::before {
+            background-image: url('../../icons/main_screen/messages.png');
         }
     }
 

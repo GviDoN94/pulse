@@ -1,0 +1,135 @@
+@media (max-width: 992px) {
+    .advantages__item {
+        padding-top: 85px;
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .button_main {
+        margin-top: 50px;
+    }
+
+    .header__official {
+        display: none;
+    }
+
+    .promo {
+        padding: 20px 0 50px;
+
+        &__wrapper {
+            margin-top: 60px;
+        }
+
+        &__header {
+            font-size: 35px;
+            line-height: 35px;
+        }
+
+        &__subheader {
+            font-size: 18px;
+            line-height: 18px;
+        }
+
+        &__icons {
+            margin-top: 45px;
+            width: 350px;
+        }
+    }
+
+    .advantages {
+        &__list {
+            flex-direction: column;
+            align-items: center;
+            margin-top: 40px;
+        }
+
+        &__item {
+            padding: 85px 10px 0;
+            max-width: none;
+
+            &:not(:last-child) {
+                margin-bottom: 25px;
+            }
+        }
+
+        &__subtitle {
+            margin-bottom: 10px;
+
+            &::before {
+                width: 55px;
+                height: 55px;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .title {
+        font-size: 22px;
+        line-height: 22px;
+    }
+
+    .button {
+        width: 120px;
+        font-size: 11px;
+        line-height: 11px;
+
+        &_main {
+            width: 260px;
+            font-size: 16px;
+        }
+    }
+
+    .header {
+        &__logo {
+            width: 135px;
+        }
+
+        &__phone {
+            font-size: 14px;
+        }
+    }
+
+    .promo {
+        padding: 10px 0 40px;
+
+        &__wrapper {
+            align-items: center;
+            margin-top: 35px;
+        }
+
+        &__header {
+            font-size: 22px;
+            line-height: 22px;
+        }
+
+        &__subheader {
+            font-size: 12px;
+            line-height: 12px;
+        }
+
+        &__icons {
+            margin-top: 40px;
+            width: 280px;
+        }
+
+        &__icon-text {
+            padding-top: 60px;
+            width: auto;
+            font-size: 12px;
+        }
+    }
+
+    .advantages {
+        padding: 40px 0;
+
+        &__list {
+            margin-top: 25px;
+        }
+    }
+}

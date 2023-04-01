@@ -13,31 +13,21 @@
     }
 
     &__item {
+        position: relative;
         display: flex;
         flex-direction: column;
         align-items: center;
-        max-width: 235px;
-    }
-
-    &__subtitle {
-        position: relative;
-        margin: 0;
-        margin-bottom: 20px;
         padding-top: 100px;
-        color: $black;
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 29px;
+        max-width: 235px;
 
         &:before {
             content: '';
             position: absolute;
             top: 0;
             left: 50%;
-            width: 70px;
-            height: 70px;
-            background-position: center;
-            background-repeat: no-repeat;
+            width: 67px;
+            height: 67px;
+            background: center (center/cover) no-repeat;
             transform: translateX(-50%);
         }
 
@@ -52,6 +42,15 @@
         &_shoe:before {
             background-image: url('../icons/adventages/shoe.png');
         }
+    }
+
+    &__subtitle {
+        margin: 0;
+        margin-bottom: 20px;
+        color: $black;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 29px;
     }
 
     &__descr {
