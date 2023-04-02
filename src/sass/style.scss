@@ -9,6 +9,7 @@ body {
 }
 
 .container {
+    position: relative;
     margin: 0 auto;
     padding: 0 50px;
     max-width: 1000px;
@@ -21,4 +22,5 @@ body {
 @import './blocks/advantages';
 @import './blocks/_consultation';
 @import './blocks/_forms';
+@import './blocks/_carousel';
 @import './blocks/_media';

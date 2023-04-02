@@ -66,6 +66,17 @@
     .title_left {
         font-size: 26px;
     }
+
+    .carousel {
+        .tns-item {
+            padding: 0;
+        }
+
+        .prev,
+        .next {
+            display: none;
+        }
+    }
 }
 
 @media (max-width: 576px) {
@@ -152,5 +163,9 @@
 
     .feed-form {
         margin: 20px auto 0;
+    }
+
+    .carousel {
+        padding: 30px 0;
     }
 }

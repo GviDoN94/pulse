@@ -11,7 +11,10 @@
     <link rel="preload" href="./fonts/MuseoSansCyrl-700.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
     <link rel="stylesheet" href="./css/style.min.css">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script defer src="./js/script.js"></script>
 </head>
 
 <body>
@@ -110,6 +113,28 @@
                     <input name="email" type="email" placeholder="Ваш E-mail" required>
                     <button class="button button_submit">Заказать консультацию</button>
                 </form>
+            </div>
+        </section>
+
+        <section class="carousel">
+            <div class="container">
+                <div class="carousel__inner">
+                    <div>
+                        <img src="./img/slide_1.jpg" alt="slade 1">
+                    </div>
+                    <div>
+                        <img src="./img/slide_2.jpg" alt="slade 2">
+                    </div>
+                    <div>
+                        <img src="./img/slide_3.jpg" alt="slade 3">
+                    </div>
+                </div>
+                <button class="prev">
+                    <img src="icons/left.svg" alt="previous slide">
+                </button>
+                <button class="next">
+                    <img src="icons/right.svg" alt="next slide">
+                </button>
             </div>
         </section>
     </main>
