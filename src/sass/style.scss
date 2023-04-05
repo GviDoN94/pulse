@@ -1,6 +1,7 @@
 @import './base/variables';
 
 * {
+    box-sizing: border-box;
     font-family: 'Museo Sans Cyrl', sans-serif;
 }
 
@@ -12,7 +13,7 @@ body {
     position: relative;
     margin: 0 auto;
     padding: 0 50px;
-    max-width: 1000px;
+    max-width: 1050px;
 }
 
 @import './blocks/promo';
@@ -23,4 +24,5 @@ body {
 @import './blocks/_consultation';
 @import './blocks/_forms';
 @import './blocks/_carousel';
+@import './blocks/_catalog';
 @import './blocks/_media';

@@ -67,15 +67,8 @@
         font-size: 26px;
     }
 
-    .carousel {
-        .tns-item {
-            padding: 0;
-        }
-
-        .prev,
-        .next {
-            display: none;
-        }
+    .carousel__inner {
+        padding: 0;
     }
 }
 
