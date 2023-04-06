@@ -314,4 +314,25 @@
             text-align: center;
         }
     }
+
+    .modal {
+        padding: 20px;
+        padding-top: 25px;
+        width: 300px;
+
+        &__close {
+            top: 7px;
+            right: 7px;
+        }
+
+        &__subtitle {
+            margin: 0 auto;
+            max-width: 200px;
+        }
+
+        &__descr {
+            margin: 20px auto 0;
+            max-width: 200px;
+        }
+    }
 }
