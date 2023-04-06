@@ -22,4 +22,15 @@
     &_modal {
         margin: 25px auto 0;
     }
+
+    .error {
+        border: 1px solid #ff0000;
+    }
+
+    label.error {
+        margin-bottom: 15px;
+        border: none;
+        color: #ff0000;
+        font-size: 14px;
+    }
 }
