@@ -16,7 +16,7 @@
     border: 2px solid #d0d0d0;
     width: 220px;
     height: 50px;
-    color: #6B6B6B;
+    color: #6b6b6b;
     font-weight: 400;
     font-size: 18px;
     line-height: 50px;
@@ -59,7 +59,7 @@
     text-align: center;
     padding: 20px;
     width: calc((100% - 50px) / 3);
-    border: 2px solid #E8E8E8;
+    border: 2px solid #e8e8e8;
     overflow: hidden;
 
     &:nth-child(3n) {
@@ -110,7 +110,7 @@
         line-height: 21px;
 
         &:before {
-          content: '';
+          content: "";
           position: absolute;
           top: 7px;
           left: 0;
@@ -173,7 +173,7 @@
     hr {
       margin: 20px 0;
       border-bottom: none;
-      background-color: #E8E8E8;
+      background-color: #e8e8e8;
     }
 
     &__footer {

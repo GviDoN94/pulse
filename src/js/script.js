@@ -123,4 +123,28 @@ $(document).ready(function () {
     });
     return false;
   });
+
+  // Smooth scroll and pageup
+
+  $(window).scroll(function () {
+    $(this).scrollTop() > 700 ? $(".pageup").fadeIn() : $(".pageup").fadeOut();
+  });
+
+  $("a").on("click", function (e) {
+    if (this.hash !== "") {
+      e.preventDefault();
+
+      const hash = this.hash;
+
+      $("html, body").animate(
+        {
+          scrollTop: $(hash).offset().top,
+        },
+        800,
+        function () {
+          window.location.hash = hash;
+        }
+      );
+    }
+  });
 });

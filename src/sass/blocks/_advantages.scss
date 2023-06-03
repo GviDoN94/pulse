@@ -1,7 +1,7 @@
 .advantages {
   text-align: center;
   padding: 70px 0 65px;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
 
   &__list {
     display: flex;
@@ -21,7 +21,7 @@
     max-width: 235px;
 
     &:before {
-      content: '';
+      content: "";
       position: absolute;
       top: 0;
       left: 50%;
@@ -32,15 +32,15 @@
     }
 
     &_cup:before {
-      background-image: url('../icons/adventages/cup.png');
+      background-image: url("../icons/adventages/cup.png");
     }
 
     &_heart:before {
-      background-image: url('../icons/adventages/heart.png');
+      background-image: url("../icons/adventages/heart.png");
     }
 
     &_shoe:before {
-      background-image: url('../icons/adventages/shoe.png');
+      background-image: url("../icons/adventages/shoe.png");
     }
   }
 
