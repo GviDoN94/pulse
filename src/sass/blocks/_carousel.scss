@@ -1,77 +1,77 @@
 .carousel {
-    padding: 80px 0;
+  padding: 80px 0;
 
-    &__inner {
-        position: relative;
-        margin: 0 auto;
-        padding: 0 100px;
-        list-style: none;
+  &__inner {
+    position: relative;
+    margin: 0 auto;
+    padding: 0 100px;
+    list-style: none;
+  }
+
+  &__slide {
+    width: 100%;
+  }
+
+  .slick-prev,
+  .slick-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+
+    img {
+      width: 31px;
+      height: 50px;
     }
+  }
 
-    &__slide {
-        width: 100%;
-    }
+  .slick-next {
+    left: auto;
+    right: 0;
+  }
 
-    .slick-prev,
-    .slick-next {
+  .slick-dots {
+    display: flex !important;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+
+    li {
+      position: relative;
+      margin: 0 5px;
+      width: 10px;
+      height: 10px;
+      border: 1px solid #b5b5b5;
+      border-radius: 50%;
+      cursor: pointer;
+
+      &:before {
+        content: '';
         position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        left: 0;
-        border: none;
-        background-color: #fff;
-        cursor: pointer;
-
-        img {
-            width: 31px;
-            height: 50px;
-        }
+        top: -3px;
+        left: -3px;
+        right: -3px;
+        bottom: -3px;
+        border: 1px solid transparent;
+        border-radius: 50%;
+      }
     }
 
-    .slick-next {
-        left: auto;
-        right: 0;
+    li.slick-active {
+      border: transparent;
+      background-color: $main-color;
+
+      &:before {
+        border-color: $main-color;
+      }
     }
 
-    .slick-dots {
-        display: flex !important;
-        justify-content: center;
-        padding: 0;
-        list-style: none;
-
-        li {
-            position: relative;
-            margin: 0 5px;
-            width: 10px;
-            height: 10px;
-            border: 1px solid #b5b5b5;
-            border-radius: 50%;
-            cursor: pointer;
-
-            &:before {
-                content: '';
-                position: absolute;
-                top: -3px;
-                left: -3px;
-                right: -3px;
-                bottom: -3px;
-                border: 1px solid transparent;
-                border-radius: 50%;
-            }
-        }
-
-        li.slick-active {
-            border: transparent;
-            background-color: $main-color;
-
-            &:before {
-                border-color: $main-color;
-            }
-        }
-
-        button {
-            opacity: 0;
-            visibility: hidden;
-        }
+    button {
+      opacity: 0;
+      visibility: hidden;
     }
+  }
 }

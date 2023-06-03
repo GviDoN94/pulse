@@ -1,67 +1,67 @@
 .footer {
-    position: relative;
-    height: 630px;
+  position: relative;
+  height: 630px;
 
-    &__info {
-        position: absolute;
-        top: 0;
-        left: 50%;
-        text-align: center;
-        padding: 50px;
-        width: 460px;
-        background-color: $main-color;
-        transform: translateX(-50%);
+  &__info {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    text-align: center;
+    padding: 50px;
+    width: 460px;
+    background-color: $main-color;
+    transform: translateX(-50%);
+  }
+
+  &__addr {
+    color: $white;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    font-style: normal;
+  }
+
+
+  &__phone {
+    display: block;
+    margin-top: 35px;
+    color: $white;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    text-decoration: none;
+
+    &:hover {
+      color: $white;
     }
+  }
 
-    &__addr {
-        color: $white;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 20px;
-        font-style: normal;
+  &__social {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    margin-top: 35px;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 30px;
     }
+  }
 
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: 2px solid $white;
+    border-radius: 50%;
+  }
 
-    &__phone {
-        display: block;
-        margin-top: 35px;
-        color: $white;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 20px;
-        text-decoration: none;
-
-        &:hover {
-            color: $white;
-        }
-    }
-
-    &__social {
-        display: flex;
-        justify-content: center;
-        margin: 0;
-        margin-top: 35px;
-        padding: 0;
-        list-style: none;
-    }
-
-    &__item {
-        &:not(:last-child) {
-            margin-right: 30px;
-        }
-    }
-
-    &__link {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 50px;
-        height: 50px;
-        border: 2px solid $white;
-        border-radius: 50%;
-    }
-
-    &__icon {
-        height: 25px;
-    }
+  &__icon {
+    height: 25px;
+  }
 }

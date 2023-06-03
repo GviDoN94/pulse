@@ -1,67 +1,67 @@
 .advantages {
-    text-align: center;
-    padding: 70px 0 65px;
-    background-color: #F6F6F6;
+  text-align: center;
+  padding: 70px 0 65px;
+  background-color: #F6F6F6;
 
-    &__list {
-        display: flex;
-        justify-content: space-between;
-        margin: 0;
-        margin-top: 65px;
-        padding: 0;
-        list-style: none;
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    margin-top: 65px;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    max-width: 235px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 67px;
+      height: 67px;
+      background: center (center/cover) no-repeat;
+      transform: translateX(-50%);
     }
 
-    &__item {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 100px;
-        max-width: 235px;
-
-        &:before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 50%;
-            width: 67px;
-            height: 67px;
-            background: center (center/cover) no-repeat;
-            transform: translateX(-50%);
-        }
-
-        &_cup:before {
-            background-image: url('../icons/adventages/cup.png');
-        }
-
-        &_heart:before {
-            background-image: url('../icons/adventages/heart.png');
-        }
-
-        &_shoe:before {
-            background-image: url('../icons/adventages/shoe.png');
-        }
+    &_cup:before {
+      background-image: url('../icons/adventages/cup.png');
     }
 
-    &__subtitle {
-        margin: 0;
-        margin-bottom: 20px;
-        color: $black;
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 29px;
+    &_heart:before {
+      background-image: url('../icons/adventages/heart.png');
     }
 
-    &__descr {
-        color: $black;
-        font-weight: 300;
-        font-size: 14px;
-        line-height: 18px;
+    &_shoe:before {
+      background-image: url('../icons/adventages/shoe.png');
     }
+  }
 
-    &__link {
-        color: #ff0000;
-        text-transform: uppercase;
-    }
+  &__subtitle {
+    margin: 0;
+    margin-bottom: 20px;
+    color: $black;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 29px;
+  }
+
+  &__descr {
+    color: $black;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  &__link {
+    color: #ff0000;
+    text-transform: uppercase;
+  }
 }
