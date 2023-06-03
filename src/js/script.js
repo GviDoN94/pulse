@@ -42,7 +42,7 @@ $(document).ready(function () {
         $(".catalog-item__content")
           .eq(i)
           .toggleClass("catalog-item__content_active");
-        $(".catalog-item__list").eq(i).toggleClass("catalog-item__list_active");
+        $(".catalog-item__more").eq(i).toggleClass("catalog-item__more_active");
       });
     });
   }
@@ -147,4 +147,6 @@ $(document).ready(function () {
       );
     }
   });
+
+  new WOW().init();
 });

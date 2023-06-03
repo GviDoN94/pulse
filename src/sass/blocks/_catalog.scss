@@ -83,15 +83,11 @@
       }
     }
 
-    &__list {
-      text-align: left;
-      margin: 0;
+    &__more {
       margin-left: 20px;
-      padding: 0;
       padding-right: 20px;
-      padding-bottom: 14px;
+      padding-bottom: 25px;
       width: 50%;
-      list-style: none;
       transform: translateX(0);
       transition: transform 0.5s ease-in-out;
 
@@ -99,6 +95,13 @@
         margin-left: 0;
         transform: translateX(-100%);
       }
+    }
+
+    &__list {
+      text-align: left;
+      margin: 0;
+      padding: 0;
+      list-style: none;
 
       li {
         position: relative;
