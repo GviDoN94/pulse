@@ -4,10 +4,12 @@ $(document).ready(function () {
   $(".carousel__inner").slick({
     speed: 1000,
     draggable: false,
-    prevArrow:
-      '<button type="button" class="slick-prev"><img src="./icons/left.svg"></button>',
-    nextArrow:
-      '<button type="button" class="slick-next"><img src="./icons/right.svg"></button>',
+    prevArrow: `<button type="button" class="slick-prev" aria-label="prev">
+                  <img src="./icons/left.svg" alt="prev">
+                </button>`,
+    nextArrow: `<button type="button" class="slick-next" aria-label="prev">
+                  <img src="./icons/right.svg" alt="next">
+                </button>`,
     responsive: [
       {
         breakpoint: 768,
@@ -111,13 +113,12 @@ $(document).ready(function () {
 
     $.ajax({
       type: "POST",
-      url: "./mailer/smart.php",
+      url: "./mailer/mail.php",
       data: $(this).serialize(),
     }).done(function () {
       $(this).find("input").val("");
       $("#consultation, #order").fadeOut();
       $(".overlay, #thanks").fadeIn("slow");
-      console.log("dfgdfg");
 
       $("form").trigger("reset");
     });
